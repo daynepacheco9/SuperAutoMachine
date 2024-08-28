@@ -16,5 +16,13 @@ public abstract class MaquinaBase
         experiencia = 1;
     }
 
-    public abstract void EstaMorto();
+    public abstract void Morrendo();
+
+    public virtual void Vendido()
+    {
+        Game.GetGame().moedas++;
+    }
+    public abstract void ContraAtaca(Lutador inimigo);
+
+
 }

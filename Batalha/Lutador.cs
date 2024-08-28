@@ -9,13 +9,22 @@ public class Lutador{
 
     public Lutador(MaquinaBase maquina)
     {
-        maquina = maquina ?? throw new ArgumentNullException(nameof(maquina));
+        this.maquina = maquina;
         vidaAtual = maquina.vida;
         ataqueAtual = maquina.ataque;
     }
 
+    public void Atacar(Lutador inimigo)
+    {
+        vidaAtual -= inimigo.ataqueAtual;
+        maquina.ContraAtaca(inimigo);
+
+        if (vidaAtual <= 0)
+            Morrer();
+    }
+
     public void Morrer(){
-        maquina.EstaMorto();
+        maquina.Morrendo();
         statusVida = false;
     }
 
