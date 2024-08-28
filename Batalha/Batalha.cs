@@ -10,11 +10,4 @@ public class Batalha
     public Stack<Lutador> time1 => Time1;
     public Stack<Lutador> time2 => Time2;
 
-    public Batalha()
-    {
-        IEnumerable<MaquinaBase> timeJogador,
-        Gera
-        
-    }
-
 }
