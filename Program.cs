@@ -1,2 +1,2 @@
-var app = new ExampleApp();
+var app = new SuperAutoMachines();
 app.Run();
