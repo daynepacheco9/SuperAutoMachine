@@ -17,7 +17,7 @@ public class Lutador{
     public void Atacar(Lutador inimigo)
     {
         vidaAtual -= inimigo.ataqueAtual;
-        maquina.ContraAtaca(inimigo);
+        maquina.Atacando(inimigo);
 
         if (vidaAtual <= 0)
             Morrer();
@@ -27,5 +27,8 @@ public class Lutador{
         maquina.Morrendo();
         statusVida = false;
     }
+    
+    public void ComecarBatalha() => maquina.Batalhando();
 
+    public void TomaDeVolta() => maquina.ContraAtaca();
 }

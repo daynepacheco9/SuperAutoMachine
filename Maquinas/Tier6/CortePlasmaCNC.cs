@@ -5,7 +5,7 @@ public class CortePlasmaCNC : MaquinaBase{
         ataque = 6;
         vida = 8;
     }
-    public override void ContraAtaca(Lutador inimigo)
+    public override void Atacando(Lutador inimigo)
     {
         throw new System.NotImplementedException();
     }
@@ -15,8 +15,9 @@ public class CortePlasmaCNC : MaquinaBase{
         throw new System.NotImplementedException();
     }
 
-    public override void Vendido()
-    {
-        
-    }
+    public override void Vendido(){}
+
+    public override void Batalhando(){}
+
+    public override void ContraAtaca(){}
 }

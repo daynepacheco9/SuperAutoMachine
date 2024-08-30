@@ -5,7 +5,7 @@ public class Martelo : MaquinaBase{
         ataque = 2;
         vida = 3;
     }
-    public override void ContraAtaca(Lutador inimigo)
+    public override void Atacando(Lutador inimigo)
     {
         throw new System.NotImplementedException();
     }
@@ -15,9 +15,10 @@ public class Martelo : MaquinaBase{
         throw new System.NotImplementedException();
     }
 
-    public override void Vendido()
-    {
-        
-    }
+    public override void Vendido(){}
+
+    public override void Batalhando(){}
+
+    public override void ContraAtaca(){}
 }
 

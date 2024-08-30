@@ -22,7 +22,11 @@ public abstract class MaquinaBase
     {
         Game.GetGame().moedas++;
     }
-    public abstract void ContraAtaca(Lutador inimigo);
+    public abstract void Atacando(Lutador inimigo);
+
+    public abstract void Batalhando();
+
+    public abstract void ContraAtaca();
 
 
 }
